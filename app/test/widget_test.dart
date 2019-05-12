@@ -6,7 +6,7 @@
 // tree, read text, and verify that the values of widget properties are correct.
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:birb/no_content.dart';
+import 'package:birb/posts_list.dart';
 import 'package:birb/main.dart';
 
 void main() {
@@ -15,6 +15,6 @@ void main() {
     await tester.pumpWidget(MyApp());
 
     expect(find.text('Birb'), findsOneWidget);
-    expect(find.byType(NoContent), findsOneWidget);
+    expect(find.byType(PostsList), findsOneWidget);
   });
 }
